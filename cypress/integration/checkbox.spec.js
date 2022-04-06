@@ -16,6 +16,7 @@ describe('checkbox cheking', () => {
     cy.get(':nth-child(1) > .element-list > .menu-list > #item-1').click()
 
     cy.get('#tree-node-home').check({ force: true }).should('be.checked')
+    
 
   })
 })
