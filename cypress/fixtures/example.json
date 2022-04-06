@@ -1,0 +1,7 @@
+{
+  "name": "John Something",
+  "email": "joe_mail@fake.fm",
+  "address1": "End of Street 22",
+  "address2": "Second Street 2CV",
+  "body": "Fixtures are a great way to mock data for responses to routes"
+}
