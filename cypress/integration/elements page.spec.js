@@ -93,20 +93,4 @@ describe('form submission test', () => {
       .should('have.class', 'field-error')
 
   })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 })
