@@ -19,6 +19,12 @@ export class NavigationPage {
         cy.visit('https://demoqa.com/upload-download')
     }
 
+    c1BoxPage(){
+        cy.visit('https://demoqa.com/checkbox')
+       
+
+    }
+
 }
 
 export const navigateTo = new NavigationPage()

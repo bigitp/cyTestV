@@ -18,3 +18,12 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+
+    if (err.message.includes('e(...).setup is not a function')) {
+      return false
+    }
+
+  })

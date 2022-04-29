@@ -24,3 +24,9 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import 'cypress-file-upload';
+
+
+ Cypress.Commands.add("getBySelRadio", (selector, ...args) => {
+    return cy.get(`input[id=${selector}]`, ...args).click({force: true}).should('be.checked');
+  });
+
