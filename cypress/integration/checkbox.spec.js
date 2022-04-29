@@ -22,12 +22,14 @@ describe('checkbox cheking', () => {
     // kako si pronalazio ove selektore, moze li krace da se napisu a da budu jedinstveni?
     // poenta page object pattern-a je da se ovakve stvari pisu u page-ovima.
     // tvoj dobar primer je form_Submission funkcija
-    cy.get(':nth-child(1) > .element-list > .menu-list > #item-1').click()
+        
+    // cy.get(':nth-child(1) > .element-list > .menu-list > #item-1').click()
     
+    // naravno moze i po kracem postupku, u lini ispod sam to i uradio
+    cy.get('#item-1').click()
 
     cy.get('#tree-node-home').check({ force: true }).should('be.checked') // radi li i bez force: true?
-  
-    
+    // ne radi bez {force:true}, jer taj elemnet nije vidljiv u DOM-u, bez toga cy smarta da taj element ne postoji
 
   })
 })
