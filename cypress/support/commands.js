@@ -26,7 +26,8 @@
 import 'cypress-file-upload';
 
 
- Cypress.Commands.add("getBySelRadio", (selector, ...args) => {
+// probaj da napises neku custom komandu, koristi se cesto
+
+Cypress.Commands.add("getBySelRadio", (selector, ...args) => {
     return cy.get(`input[id=${selector}]`, ...args).click({force: true}).should('be.checked');
   });
-
